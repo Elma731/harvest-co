@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Us | Harvest & Co.</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap 5 CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =====================================================
+       NAVBAR
+  ====================================================== -->
+  <nav class="hc-navbar" id="hc-navbar">
+    <div class="hc-navbar__inner">
+      <ul class="hc-nav__list hc-nav__list--left">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Menus</a></li>
+      </ul>
+      <a href="index.html" class="hc-navbar__logo"><em>Harvest &amp; Co.</em></a>
+      <ul class="hc-nav__list hc-nav__list--right">
+        <li><a href="contact.html" class="hc-nav--active">Find Us</a></li>
+        <li><a href="contact.html#reservations">Reservations</a></li>
+      </ul>
+      <button class="hc-navbar__toggle" id="hc-nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="hc-nav__mobile" id="hc-nav-mobile">
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Menus</a></li>
+        <li><a href="contact.html">Find Us</a></li>
+        <li><a href="contact.html#reservations">Reservations</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <main>
+
+    <!-- ===================================================
+         PAGE HEADER
+    ==================================================== -->
+    <header class="hc-page-header">
+      <p class="hc-section-label">Harvest &amp; Co. | Boerum Hill, Brooklyn</p>
+      <h1 class="hc-page-header__title">Find Us</h1>
+      <div class="hc-page-header__rule"></div>
+      <p class="hc-page-header__note">
+        147 Bergen Street, Brooklyn, NY 11217<br />
+        We'd love to see you! Walk in or get in touch.
+      </p>
+    </header>
+
+    <!-- Contact Hero Image -->
+    <section class="hc-contact-hero">
+      <img src="assets/contact-hero.jpg" alt="Harvest & Co. exterior" />
+    </section>
+
+    <!-- ===================================================
+         CONTACT GRID — INFO + FORM
+    ==================================================== -->
+    <section class="hc-contact-section" aria-label="Contact information and form">
+      <div class="hc-contact__grid">
+
+        <!-- LEFT: Info -->
+        <div class="hc-contact__info">
+
+          <div class="hc-contact__block">
+            <p class="hc-contact__label">Address</p>
+            <address class="hc-contact__detail">
+              147 Bergen Street<br />
+              Boerum Hill, Brooklyn, NY 11217<br />
+              United States
+            </address>
+          </div>
+
+          <div class="hc-contact__block">
+            <p class="hc-contact__label">Phone</p>
+            <p class="hc-contact__detail">
+              <a href="tel:+17185550194">+1 (718) 555-0194</a>
+            </p>
+          </div>
+
+          <div class="hc-contact__block">
+            <p class="hc-contact__label">Getting There</p>
+            <p class="hc-contact__detail">
+              Subway: A, C, G to Hoyt-Schermerdam St (3 min walk)<br />
+              Bus: B61, B103
+            </p>
+          </div>
+
+          <div class="hc-contact__block">
+            <p class="hc-contact__label">Email</p>
+            <p class="hc-contact__detail">
+              <a href="mailto:hello@harvestandco.com">hello@harvestandco.com</a>
+            </p>
+          </div>
+
+          <div class="hc-contact__block">
+            <p class="hc-contact__label">Opening Hours</p>
+            <table class="hc-hours-table">
+              <tbody>
+                <tr>
+                  <td>Monday – Friday</td>
+                  <td>8:00AM – 4:00PM</td>
+                </tr>
+                <tr>
+                  <td>Saturday – Sunday</td>
+                  <td>7:30AM – 5:00PM</td>
+                </tr>
+                <tr class="hc-hours-table__note">
+                  <td colspan="2">Brunch service until 3:00PM daily. Kitchen closes 30 min before closing time.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: Contact Form -->
+        <div class="hc-contact__form-wrap" id="reservations">
+          <p class="hc-section-label">Get in Touch</p>
+          <h2 class="hc-contact__form-heading">Send Us a Message</h2>
+
+          <form class="hc-form" action="#" method="post" novalidate>
+
+            <div class="hc-form__group">
+              <label class="hc-form__label" for="name">Full Name</label>
+              <input
+                class="hc-form__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Jane Adeyemi"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="hc-form__group">
+              <label class="hc-form__label" for="email">Email Address</label>
+              <input
+                class="hc-form__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="jane@example.com"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="hc-form__group">
+              <label class="hc-form__label" for="subject">Subject</label>
+              <input
+                class="hc-form__input"
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Reservation, enquiry, feedback…"
+              />
+            </div>
+
+            <div class="hc-form__group">
+              <label class="hc-form__label" for="message">Message</label>
+              <textarea
+                class="hc-form__input hc-form__textarea"
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell us how we can help…"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="hc-form__submit">Send Message</button>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         MAP EMBED
+    ==================================================== -->
+    <div class="hc-map-placeholder" aria-label="Map location of Harvest and Co.">
+      <div class="hc-map-placeholder__inner">
+        <iframe
+          title="Harvest & Co. location map - 147 Bergen Street, Brooklyn, NY"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.398!2d-73.9855!3d40.6834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a0b6e5b5b5b%3A0x1234567890!2s147+Bergen+St%2C+Brooklyn%2C+NY+11217!5e0!3m2!1sen!2sus!4v1234567890"
+          width="100%"
+          height="450"
+          style="border:0; border-radius: 8px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="hc-footer">
+    <div class="hc-footer__grid">
+      <div class="hc-footer__col hc-footer__col--brand">
+        <a href="index.html" class="hc-footer__logo"><em>Harvest &amp; Co.</em></a>
+        <p class="hc-footer__tagline">Good food, good people, every morning.</p>
+      </div>
+      <div class="hc-footer__col">
+        <p class="hc-footer__col-heading">Explore</p>
+        <ul class="hc-footer__links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Menus</a></li>
+          <li><a href="contact.html">Find Us</a></li>
+          <li><a href="contact.html#reservations">Reservations</a></li>
+        </ul>
+      </div>
+      <div class="hc-footer__col">
+        <p class="hc-footer__col-heading">Visit</p>
+        <address class="hc-footer__address">
+          147 Bergen Street<br />
+          Boerum Hill, Brooklyn, NY 11217
+        </address>
+        <p class="hc-footer__hours">
+          Mon – Fri &nbsp; 8AM – 4PM<br />
+          Sat – Sun &nbsp; 7:30AM – 5PM
+        </p>
+      </div>
+    </div>
+    <div class="hc-footer__bottom">
+      <p>&copy; 2026 Harvest &amp; Co. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmTqBVl7kQB8Lf+HX5d+4+bM0p1x"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    const navbar = document.getElementById('hc-navbar');
+    const toggle = document.getElementById('hc-nav-toggle');
+    const drawer = document.getElementById('hc-nav-mobile');
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('is-scrolled', window.scrollY > 8);
+    }, { passive: true });
+
+    toggle.addEventListener('click', () => {
+      const open = drawer.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harvest & Co. | Brunch Restaurant</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap 5 CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =====================================================
+       NAVBAR
+  ====================================================== -->
+  <nav class="hc-navbar" id="hc-navbar">
+    <div class="hc-navbar__inner">
+
+      <!-- Left links -->
+      <ul class="hc-nav__list hc-nav__list--left">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Menus</a></li>
+      </ul>
+
+      <!-- Centered logo -->
+      <a href="index.html" class="hc-navbar__logo">
+        <em>Harvest &amp; Co.</em>
+      </a>
+
+      <!-- Right links -->
+      <ul class="hc-nav__list hc-nav__list--right">
+        <li><a href="contact.html">Find Us</a></li>
+        <li><a href="contact.html#reservations">Reservations</a></li>
+      </ul>
+
+      <!-- Mobile toggle (visible < lg) -->
+      <button class="hc-navbar__toggle" id="hc-nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="hc-nav__mobile" id="hc-nav-mobile">
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Menus</a></li>
+        <li><a href="contact.html">Find Us</a></li>
+        <li><a href="contact.html#reservations">Reservations</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+  <main>
+    <section class="hc-hero" aria-label="Hero image">
+      <!-- Placeholder image — swap src for real food photography -->
+      <img
+        src="assets/hero-home.jpg"
+        alt="A beautifully plated brunch spread at Harvest & Co."
+        class="hc-hero__img"
+      />
+    </section>
+
+    <!-- Hero Title Section -->
+    <section class="hc-hero-title">
+      <div class="hc-hero-title__inner">
+        <h1 class="hc-hero-title__heading">Harvest & Co.</h1>
+        <p class="hc-hero-title__tagline">Fresh, seasonal brunch in Brooklyn</p>
+      </div>
+    </section>
+
+    <!-- Newsletter bar -->
+    <section class="hc-newsletter" aria-label="Newsletter signup">
+      <div class="hc-newsletter__inner">
+        <p class="hc-newsletter__text">Sign up for the latest updates</p>
+        <form class="hc-newsletter__form" action="#" method="post" novalidate>
+          <input
+            type="email"
+            name="email"
+            class="hc-newsletter__input"
+            placeholder="Your email address"
+            aria-label="Email address"
+            required
+          />
+          <button type="submit" class="hc-newsletter__btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Gallery Strip -->
+    <section class="hc-gallery-strip" aria-label="Food gallery">
+      <div class="hc-gallery-strip__item">
+        <img src="assets/gallery-strip1.jpg" alt="Delicious pancakes" />
+      </div>
+      <div class="hc-gallery-strip__item">
+        <img src="assets/gallery-strip2.jpg" alt="Fresh avocado toast" />
+      </div>
+      <div class="hc-gallery-strip__item">
+        <img src="assets/gallery-strip3.jpg" alt="Coffee and pastries" />
+      </div>
+      <div class="hc-gallery-strip__item">
+        <img src="assets/gallery-strip4.jpg" alt="Seasonal fruit bowl" />
+      </div>
+    </section>
+
+    <!-- ===================================================
+         ABOUT PREVIEW
+    ==================================================== -->
+    <section class="hc-about-preview" aria-labelledby="about-heading">
+      <div class="hc-about-preview__inner">
+        <div class="hc-about-preview__content">
+          <p class="hc-section-label">Our Story</p>
+          <h2 class="hc-about-preview__heading" id="about-heading">
+            A Neighborhood Brunch Spot
+          </h2>
+          <p class="hc-about-preview__body">
+            Harvest &amp; Co. grew from a simple idea: that the best meals are the ones shared
+            slowly, with people you love, in a room that feels like home. We source our ingredients
+            from local farms each morning, letting the season guide what lands on your plate.
+          </p>
+          <p class="hc-about-preview__body">
+            Tucked into the corner of a sun-filled building, our dining room is a gathering place
+            for the neighborhood — for first dates, lazy Sundays, and everything in between.
+            Come as you are. Stay as long as you like.
+          </p>
+          <a href="about.html" class="hc-text-link">Read Our Story &rarr;</a>
+        </div>
+        <div class="hc-about-preview__image">
+          <img src="assets/about-preview.jpg" alt="Cozy brunch atmosphere" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         MENU PREVIEW
+    ==================================================== -->
+    <section class="hc-menu-preview" aria-labelledby="menu-heading">
+      <div class="hc-menu-preview__header">
+        <p class="hc-section-label">What We Serve</p>
+        <h2 class="hc-menu-preview__heading" id="menu-heading">From the Kitchen</h2>
+      </div>
+
+      <div class="hc-menu-preview__grid">
+
+        <!-- Column 1: Morning Plates -->
+        <div class="hc-menu-col">
+          <p class="hc-menu-col__label">Morning Plates</p>
+          <div class="hc-menu-col__img-wrap">
+            <img
+              src="assets/morning-plates.jpg"
+              alt="Morning Plates — seasonal eggs and toasts"
+            />
+          </div>
+          <ul class="hc-menu-col__dishes">
+            <li>Soft Scrambled Eggs &amp; Herbs</li>
+            <li>Avocado Toast, Seed Cracker</li>
+            <li>Ricotta Pancakes, Honey Butter</li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Weekend Specials -->
+        <div class="hc-menu-col">
+          <p class="hc-menu-col__label">Weekend Specials</p>
+          <div class="hc-menu-col__img-wrap">
+            <img
+              src="assets/weekend-specials.jpg"
+              alt="Weekend Specials — seasonal brunch plates"
+            />
+          </div>
+          <ul class="hc-menu-col__dishes">
+            <li>Confit Duck Hash</li>
+            <li>Smoked Salmon Tartine</li>
+            <li>Seasonal Grain Bowl</li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Coffee & Drinks -->
+        <div class="hc-menu-col">
+          <p class="hc-menu-col__label">Coffee &amp; Drinks</p>
+          <div class="hc-menu-col__img-wrap">
+            <img
+              src="assets/coffee-drinks.jpg"
+              alt="Coffee and drinks menu"
+            />
+          </div>
+          <ul class="hc-menu-col__dishes">
+            <li>Oat Milk Flat White</li>
+            <li>Cold Brew, House Tonic</li>
+            <li>Fresh-Pressed Citrus Juice</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="hc-menu-preview__cta">
+        <a href="menu.html" class="hc-text-link">View Full Menu &rarr;</a>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         TESTIMONIALS
+    ==================================================== -->
+    <section class="hc-testimonials" aria-labelledby="testimonials-heading">
+      <div class="hc-testimonials__inner">
+        <p class="hc-section-label">What Our Guests Say</p>
+        <h2 class="hc-testimonials__heading" id="testimonials-heading">Loved by Locals</h2>
+        <div class="hc-testimonials__grid">
+          <div class="hc-testimonial">
+            <blockquote class="hc-testimonial__quote">
+              "The best brunch spot in Brooklyn! The avocado toast is to die for, and the atmosphere is so cozy."
+            </blockquote>
+            <cite class="hc-testimonial__cite">— Sarah K., Regular Customer</cite>
+          </div>
+          <div class="hc-testimonial">
+            <blockquote class="hc-testimonial__quote">
+              "Harvest & Co. feels like home. Great food, friendly staff, and perfect for weekend brunches."
+            </blockquote>
+            <cite class="hc-testimonial__cite">— Michael T., Food Blogger</cite>
+          </div>
+          <div class="hc-testimonial">
+            <blockquote class="hc-testimonial__quote">
+              "I love the seasonal specials. Everything is fresh and delicious. Highly recommend!"
+            </blockquote>
+            <cite class="hc-testimonial__cite">— Amina R., Local Resident</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         GALLERY
+    ==================================================== -->
+    <section class="hc-gallery" aria-labelledby="gallery-heading">
+      <div class="hc-gallery__inner">
+        <p class="hc-section-label">Our Space</p>
+        <h2 class="hc-gallery__heading" id="gallery-heading">A Glimpse Inside</h2>
+        <div class="hc-gallery__grid">
+          <div class="hc-gallery__item">
+            <img src="assets/gallery1.jpg" alt="Cozy dining area with natural light" />
+          </div>
+          <div class="hc-gallery__item">
+            <img src="assets/gallery2.jpg" alt="Fresh ingredients on display" />
+          </div>
+          <div class="hc-gallery__item">
+            <img src="assets/gallery3.jpg" alt="Happy customers enjoying brunch" />
+          </div>
+          <div class="hc-gallery__item">
+            <img src="assets/gallery4.jpg" alt="Artistic presentation of dishes" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="hc-footer">
+    <div class="hc-footer__grid">
+
+      <!-- Brand -->
+      <div class="hc-footer__col hc-footer__col--brand">
+        <a href="index.html" class="hc-footer__logo"><em>Harvest &amp; Co.</em></a>
+        <p class="hc-footer__tagline">Good food, good people, every morning.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="hc-footer__col">
+        <p class="hc-footer__col-heading">Explore</p>
+        <ul class="hc-footer__links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Menus</a></li>
+          <li><a href="contact.html">Find Us</a></li>
+          <li><a href="contact.html#reservations">Reservations</a></li>
+        </ul>
+      </div>
+
+      <!-- Address & Hours -->
+      <div class="hc-footer__col">
+        <p class="hc-footer__col-heading">Visit</p>
+        <address class="hc-footer__address">
+          147 Bergen Street<br />
+          Boerum Hill, Brooklyn, NY 11217
+        </address>
+        <p class="hc-footer__hours">
+          Mon – Fri &nbsp; 8AM – 4PM<br />
+          Sat – Sun &nbsp; 7:30AM – 5PM
+        </p>
+      </div>
+
+    </div>
+
+    <div class="hc-footer__bottom">
+      <p>&copy; 2026 Harvest &amp; Co. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmTqBVl7kQB8Lf+HX5d+4+bM0p1x"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    const navbar = document.getElementById('hc-navbar');
+    const toggle = document.getElementById('hc-nav-toggle');
+    const drawer = document.getElementById('hc-nav-mobile');
+
+    // Scroll shadow
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('is-scrolled', window.scrollY > 8);
+    }, { passive: true });
+
+    // Mobile drawer toggle + hamburger animation
+    toggle.addEventListener('click', () => {
+      const open = drawer.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
