@@ -21,6 +21,9 @@
     crossorigin="anonymous"
   />
 
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -34,6 +37,7 @@
 
       <!-- Left links -->
       <ul class="hc-nav__list hc-nav__list--left">
+        <li><a href="index.html" class="hc-nav--active">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="menu.html">Menus</a></li>
       </ul>
@@ -45,6 +49,7 @@
 
       <!-- Right links -->
       <ul class="hc-nav__list hc-nav__list--right">
+        <li class="hc-nav__order-pill"><a href="order.html">Order Online</a></li>
         <li><a href="contact.html">Find Us</a></li>
         <li><a href="contact.html#reservations">Reservations</a></li>
       </ul>
@@ -61,8 +66,10 @@
     <!-- Mobile drawer -->
     <div class="hc-nav__mobile" id="hc-nav-mobile">
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="menu.html">Menus</a></li>
+        <li class="hc-nav__order-pill"><a href="order.html">Order Online</a></li>
         <li><a href="contact.html">Find Us</a></li>
         <li><a href="contact.html#reservations">Reservations</a></li>
       </ul>
@@ -273,6 +280,37 @@
       </div>
     </section>
 
+    <!-- ===================================================
+         ORDER YOUR BRUNCH
+    ==================================================== -->
+    <section class="hc-order-home" aria-labelledby="order-home-heading">
+      <div class="hc-order-home__inner">
+        <p class="hc-section-label">Delivery &amp; Pickup</p>
+        <h2 class="hc-order-home__heading" id="order-home-heading">
+          Can't Make It In? We've Got You.
+        </h2>
+        <p class="hc-order-home__sub">
+          Order delivery or pickup through your favourite platform —
+          fresh, seasonal brunch brought straight to you.
+        </p>
+        <div class="hc-order-home__platforms">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="hc-platform-btn hc-platform-btn--uber">
+            🛵&nbsp; Uber Eats
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="hc-platform-btn hc-platform-btn--doordash">
+            DoorDash
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="hc-platform-btn hc-platform-btn--grubhub">
+            Grubhub
+          </a>
+        </div>
+        <p class="hc-order-home__pickup-note">
+          Or order for pickup at 147 Bergen Street, Brooklyn
+        </p>
+        <a href="order.html" class="hc-text-link">Learn More About Ordering &rarr;</a>
+      </div>
+    </section>
+
   </main>
 
 
@@ -294,6 +332,7 @@
         <ul class="hc-footer__links">
           <li><a href="about.html">About Us</a></li>
           <li><a href="menu.html">Menus</a></li>
+          <li><a href="order.html">Order Online</a></li>
           <li><a href="contact.html">Find Us</a></li>
           <li><a href="contact.html#reservations">Reservations</a></li>
         </ul>
@@ -343,5 +382,12 @@
       toggle.setAttribute('aria-expanded', open);
     });
   </script>
+
+  <!-- Scroll-to-top -->
+  <button class="hc-scroll-top" id="hc-scroll-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
