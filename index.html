@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;500;600&family=Lato:wght@300;400;700&display=swap"
     rel="stylesheet"
   />
 
@@ -82,21 +82,38 @@
   ====================================================== -->
   <main>
     <section class="hc-hero" aria-label="Hero image">
-      <!-- Placeholder image — swap src for real food photography -->
       <img
         src="assets/hero-home.jpg"
         alt="A beautifully plated brunch spread at Harvest & Co."
         class="hc-hero__img"
       />
-    </section>
 
-    <!-- Hero Title Section -->
-    <section class="hc-hero-title">
-      <div class="hc-hero-title__inner">
-        <h1 class="hc-hero-title__heading">Harvest & Co.</h1>
-        <p class="hc-hero-title__tagline">Fresh, seasonal brunch in Brooklyn</p>
+      <!-- Hero overlay content -->
+      <div class="hc-hero__content">
+        <p class="hc-hero__label">Boerum Hill, Brooklyn</p>
+        <h1 class="hc-hero__heading">Fresh. Seasonal.<br>Unforgettable.</h1>
+        <p class="hc-hero__sub">Serving Brooklyn's finest brunch at 147 Bergen Street, every morning.</p>
+        <div class="hc-hero__ctas">
+          <a href="contact.html#reservations" class="hc-hero__btn hc-hero__btn--primary">Reserve a Table</a>
+          <a href="menu.html" class="hc-hero__btn hc-hero__btn--ghost">View Menu</a>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hc-hero__scroll" aria-hidden="true">
+        <span class="hc-hero__scroll-text">scroll</span>
+        <div class="hc-hero__scroll-line"></div>
       </div>
     </section>
+
+    <!-- Info Strip -->
+    <div class="hc-info-strip" aria-label="Quick info">
+      <span class="hc-info-strip__item">🕐 Brunch Daily 7:30AM – 3PM</span>
+      <span class="hc-info-strip__divider" aria-hidden="true"></span>
+      <span class="hc-info-strip__item">📍 147 Bergen Street, Brooklyn</span>
+      <span class="hc-info-strip__divider" aria-hidden="true"></span>
+      <span class="hc-info-strip__item">📞 +1 (718) 555-0194</span>
+    </div>
 
     <!-- Newsletter bar -->
     <section class="hc-newsletter" aria-label="Newsletter signup">
@@ -230,27 +247,68 @@
          TESTIMONIALS
     ==================================================== -->
     <section class="hc-testimonials" aria-labelledby="testimonials-heading">
+      <!-- Decorative background quote marks -->
+      <span class="hc-testimonials__deco hc-testimonials__deco--tl" aria-hidden="true">&ldquo;</span>
+      <span class="hc-testimonials__deco hc-testimonials__deco--br" aria-hidden="true">&rdquo;</span>
+
       <div class="hc-testimonials__inner">
-        <p class="hc-section-label">What Our Guests Say</p>
+        <p class="hc-section-label hc-section-label--gold">What Our Guests Say</p>
         <h2 class="hc-testimonials__heading" id="testimonials-heading">Loved by Locals</h2>
+        <div class="hc-testimonials__divider"></div>
         <div class="hc-testimonials__grid">
           <div class="hc-testimonial">
+            <div class="hc-testimonial__quotemark">&ldquo;</div>
             <blockquote class="hc-testimonial__quote">
-              "The best brunch spot in Brooklyn! The avocado toast is to die for, and the atmosphere is so cozy."
+              The best brunch spot in Brooklyn! The avocado toast is to die for, and the atmosphere is so cozy.
             </blockquote>
-            <cite class="hc-testimonial__cite">— Sarah K., Regular Customer</cite>
+            <div class="hc-testimonial__footer">
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100"
+                alt="Sarah K."
+                class="hc-testimonial__photo"
+              />
+              <div class="hc-testimonial__author">
+                <span class="hc-testimonial__name">Sarah K.</span>
+                <span class="hc-testimonial__role">Regular Customer</span>
+                <div class="hc-testimonial__stars">★★★★★</div>
+              </div>
+            </div>
           </div>
           <div class="hc-testimonial">
+            <div class="hc-testimonial__quotemark">&ldquo;</div>
             <blockquote class="hc-testimonial__quote">
-              "Harvest & Co. feels like home. Great food, friendly staff, and perfect for weekend brunches."
+              Harvest &amp; Co. feels like home. Great food, friendly staff, and perfect for weekend brunches.
             </blockquote>
-            <cite class="hc-testimonial__cite">— Michael T., Food Blogger</cite>
+            <div class="hc-testimonial__footer">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100"
+                alt="Michael S."
+                class="hc-testimonial__photo"
+              />
+              <div class="hc-testimonial__author">
+                <span class="hc-testimonial__name">Michael S.</span>
+                <span class="hc-testimonial__role">Food Blogger</span>
+                <div class="hc-testimonial__stars">★★★★★</div>
+              </div>
+            </div>
           </div>
           <div class="hc-testimonial">
+            <div class="hc-testimonial__quotemark">&ldquo;</div>
             <blockquote class="hc-testimonial__quote">
-              "I love the seasonal specials. Everything is fresh and delicious. Highly recommend!"
+              I love the seasonal specials. Everything is fresh and delicious. Highly recommend!
             </blockquote>
-            <cite class="hc-testimonial__cite">— Amina R., Local Resident</cite>
+            <div class="hc-testimonial__footer">
+              <img
+                src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=100"
+                alt="Anita R."
+                class="hc-testimonial__photo"
+              />
+              <div class="hc-testimonial__author">
+                <span class="hc-testimonial__name">Anita R.</span>
+                <span class="hc-testimonial__role">Local Resident</span>
+                <div class="hc-testimonial__stars">★★★★★</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
