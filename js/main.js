@@ -94,3 +94,14 @@
   }
 
 })();
+
+/* ── Mobile touch fix for nav toggle ────────────────────── */
+(function () {
+  var toggle = document.getElementById('hc-nav-toggle');
+  if (toggle) {
+    toggle.addEventListener('touchend', function (e) {
+      e.preventDefault();
+      toggle.click();
+    });
+  }
+})();
