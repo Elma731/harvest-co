@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Harvest & Co — Wheat sheaf on deep warm dark -->
+  <rect width="32" height="32" rx="7" fill="#1A0D04"/>
+  <!-- Center stalk -->
+  <rect x="15.25" y="7" width="1.5" height="19" rx="0.75" fill="#C4963A"/>
+  <!-- Top grain head -->
+  <ellipse cx="16" cy="6" rx="2.5" ry="3.5" fill="#C4963A"/>
+  <!-- Upper left grain -->
+  <ellipse cx="11" cy="11.5" rx="4" ry="1.6" transform="rotate(-42 11 11.5)" fill="#C4963A"/>
+  <!-- Upper right grain -->
+  <ellipse cx="21" cy="11.5" rx="4" ry="1.6" transform="rotate(42 21 11.5)" fill="#C4963A"/>
+  <!-- Mid left grain -->
+  <ellipse cx="10" cy="16.5" rx="3.5" ry="1.4" transform="rotate(-30 10 16.5)" fill="#C4963A"/>
+  <!-- Mid right grain -->
+  <ellipse cx="22" cy="16.5" rx="3.5" ry="1.4" transform="rotate(30 22 16.5)" fill="#C4963A"/>
+  <!-- Binding tie at base -->
+  <path d="M10 25 Q16 22.5 22 25" fill="none" stroke="#C4963A" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

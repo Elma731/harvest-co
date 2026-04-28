@@ -587,14 +587,15 @@ ul {
 
 .hc-newsletter__input {
   font-family: var(--font-body);
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 300;
   letter-spacing: 0.06em;
   color: var(--dark);
   background: transparent;
   border: none;
   outline: none;
-  width: 220px;
+  width: min(220px, 100%);
+  min-width: 0;
   padding: 0.2rem 0.5rem 0.2rem 0;
 }
 
@@ -1909,7 +1910,7 @@ ul {
 
 .hc-form__input {
   font-family: var(--font-body);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 300;
   color: var(--dark);
   background: transparent;

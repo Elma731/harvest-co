@@ -105,3 +105,25 @@
     });
   }
 })();
+
+/* ── Close mobile drawer on any link click (incl. Reservations) ── */
+(function () {
+  var drawer = document.getElementById('hc-nav-mobile');
+  var toggle = document.getElementById('hc-nav-toggle');
+  if (!drawer) return;
+
+  drawer.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      drawer.classList.remove('is-open');
+      if (toggle) {
+        toggle.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    link.addEventListener('touchend', function (e) {
+      e.preventDefault();
+      this.click();
+    });
+  });
+})();
